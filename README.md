@@ -11,13 +11,16 @@ Refresh a web page can be so long :), so just save your js/css/html file and whe
 All samples are in kotlin, but it's very simple, so the conversion to java must be easy.
 
 Image you avec some static resources :
+
 ```kotlin
 get("/public/*").handler(
     StaticHandler.create("src/main/resources/public")
         .setCachingEnabled(false)
 )
 ```
+
 this is just the dev example, in real life you may have something like that :
+
 ```kotlin
 if (getMode() == "dev") {
     get("/public/*").handler(
@@ -33,6 +36,7 @@ Why not just the "prod mode" code? Because I don't want to wait the compile proc
 
 So, as you guess, I have some static files in ```src/main/resources/public``` which are served for url ```/public/*```
 Now to add my livereload, I just add this code to my verticle :
+
 ```kotlin
 import fr.ybonnel.vertx.livereload.LiveReload
 
@@ -53,3 +57,7 @@ class MainVerticle: AbstractVerticle() {
     }
 }
 ```
+
+## How to install
+
+The artifact is published to bintray : (bintray.com/ybonnel/maven/vertx-livereload)[https://bintray.com/ybonnel/maven/vertx-livereload] 
