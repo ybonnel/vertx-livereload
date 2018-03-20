@@ -58,6 +58,10 @@ class MainVerticle: AbstractVerticle() {
 }
 ```
 
+## Demo
+
+![Demo](https://github.com/ybonnel/vertx-livereload/raw/master/vertx-livereload.gif)
+
 ## How to install
 
 The artifact is published to bintray : [bintray.com/ybonnel/maven/vertx-livereload](https://bintray.com/ybonnel/maven/vertx-livereload) 
