@@ -60,4 +60,4 @@ class MainVerticle: AbstractVerticle() {
 
 ## How to install
 
-The artifact is published to bintray : (bintray.com/ybonnel/maven/vertx-livereload)[https://bintray.com/ybonnel/maven/vertx-livereload] 
+The artifact is published to bintray : [bintray.com/ybonnel/maven/vertx-livereload](https://bintray.com/ybonnel/maven/vertx-livereload) 
